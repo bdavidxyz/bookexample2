@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+
+  {% include head.html %}
+
+  <body>
+
+    <main class="main" aria-label="Content">
+      {{ content }}
+    </main>
+
+    <!--startjs-->
+      {% include javascript/bootstrap/jquery.js.html %}
+      {% include javascript/bootstrap/holder.js.html %} 
+      {% include javascript/bootstrap/tether.js.html %} 
+      {% include javascript/bootstrap/bootstrap.js.html %} 
+      {% include javascript/ga/ga.js.html %} 
+      {% include javascript/crisp/crisp.js.html %} 
+    <!--endjs-->
+
+  </body>
+
+</html>
